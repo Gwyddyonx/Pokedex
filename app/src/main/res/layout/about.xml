@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/light"
+    tools:context=".AboutFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/name_pokemon_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bulbasur"
+            android:layout_gravity="center"
+            android:textColor="@color/onItem"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/des_pokemon_about" />
+
+        <TextView
+            android:id="@+id/des_pokemon_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Este Pokémon nace con una semilla en el lomo, que brota con el paso del tiempo"
+            android:textSize="15sp"
+            android:textColor="@color/onItem"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="ID Pokedex:"
+                android:gravity="right"
+                android:layout_weight="50"
+                android:textSize="15sp"
+                android:textColor="@color/onItem"/>
+            <TextView
+                android:id="@+id/id_pokemon_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="50"
+                android:text="#001"
+                android:layout_margin="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/onItem"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="Tipo:"
+                android:gravity="right"
+                android:layout_weight="50"
+                android:textSize="15sp"
+                android:textColor="@color/onItem"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="50">
+                <ImageView
+                    android:id="@+id/type1_pokemon_about"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_glass"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/onItem"/>
+                <ImageView
+                    android:id="@+id/type2_pokemon_about"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_poison"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/onItem"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="Peso:"
+                android:gravity="right"
+                android:layout_weight="50"
+                android:textSize="15sp"
+                android:textColor="@color/onItem"/>
+            <TextView
+                android:id="@+id/weight_pokemon_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="50"
+                android:text="6.9 kg"
+                android:layout_margin="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/onItem"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="Altura:"
+                android:gravity="right"
+                android:layout_weight="50"
+                android:textSize="15sp"
+                android:textColor="@color/onItem"/>
+            <TextView
+                android:id="@+id/height_pokemon_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="50"
+                android:text="0.7 m"
+                android:layout_margin="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/onItem"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

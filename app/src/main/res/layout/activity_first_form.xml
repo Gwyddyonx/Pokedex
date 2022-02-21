@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".First_form"
+    android:background="@color/yellow_pikachu"
+    android:id="@+id/LayoutFirstForm">
+
+    <!--<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-65dp"
+            android:layout_weight=".10"
+            android:gravity="top"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_yellow_background">
+
+        </androidx.appcompat.widget.AppCompatImageView>-->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:layout_gravity="bottom"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_blue_dark_background"
+            android:id="@+id/pie">
+        </androidx.appcompat.widget.AppCompatImageView>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="226dp"
+        android:layout_height="226dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-160dp"
+        android:layout_weight=".55"
+        android:scaleType="fitXY"
+        android:src="@mipmap/pikachu_face"
+        android:id="@+id/pikachu">
+
+        <!--<androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="226dp"
+        android:layout_height="226dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-65dp"
+        android:layout_weight=".55"
+        android:scaleType="fitXY"
+        android:src="@mipmap/charmander_face"
+        android:id="@+id/pikachu">-->
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".55"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginTop="170dp"
+        app:srcCompat ="@drawable/ic_left_hand_pikachu"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:id="@+id/lhand">
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".55"
+        android:layout_marginRight="-100dp"
+        android:layout_marginTop="200dp"
+        app:srcCompat ="@drawable/ic_right_hand_pikachu"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:id="@+id/rhand">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="140dp"
+        android:layout_marginHorizontal="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/linear_name">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/male_icon"
+            android:layout_gravity="center">
+        </androidx.appcompat.widget.AppCompatImageView>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/til_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#10161D"
+            app:boxBackgroundColor="#10161D"
+            android:textColorHint="#85FFFFFF"
+            android:outlineAmbientShadowColor="@color/onPrimary"
+            android:outlineSpotShadowColor="@color/onPrimary"
+            app:placeholderTextColor="@color/onPrimary"
+            app:hintTextColor="@color/onPrimary"
+            app:boxStrokeColor="@color/onPrimary">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25sp"
+            android:textColor="#ffff"
+            android:hint="Nombre"
+            android:textColorHint="#85FFFFFF"
+            android:id="@+id/nombre_edit"
+            android:inputType="textPersonName">
+        </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_set_name"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginBottom="50dp"
+        android:text="Continuar"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="80dp"
+        android:text="MY POKEDEX"
+        android:textSize="50sp"
+        android:textColor="@color/black"
+        android:id="@+id/title_name">
+    </TextView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

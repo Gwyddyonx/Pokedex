@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="250dp"
+        android:id="@+id/coordinator_top"
+        android:orientation="horizontal">
+        <com.google.android.material.navigationrail.NavigationRailView
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints"
+            app:menu="@menu/detail_menu_pokemon"
+            app:menuGravity="center"
+            android:background="@color/primary"
+            android:backgroundTint="@color/primary"
+            app:itemIconSize="@dimen/fab_icon_size"
+            android:theme="@style/Theme.Pokedex"
+            app:labelVisibilityMode="selected"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            android:id="@+id/frame_about"
+            app:navGraph="@navigation/nav_detail">
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <com.robertlevonyan.views.customfloatingactionbutton.FloatingActionButton
+        android:layout_width="301dp"
+        android:id="@+id/floating_pokeball_detail"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="223dp"
+        tools:ignore="MissingConstraints"
+        app:fabIcon="@mipmap/masterball_mini"
+        app:fabColor="@color/primary"
+        app:fabSize="mini"
+        android:layout_marginTop="-20dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/frame">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/photoPokemon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primary"
+            android:src="@mipmap/example_pokemon" />
+    </FrameLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

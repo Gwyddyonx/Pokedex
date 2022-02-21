@@ -1,0 +1,3 @@
+0 abra
+1 aerodactyl
+2 bulbasaur
